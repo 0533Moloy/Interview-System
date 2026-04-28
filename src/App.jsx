@@ -2,10 +2,8 @@ import { useEffect, useState } from "react";
 import * as pdfjsLib from "pdfjs-dist";
 import "./App.css";
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url
-).toString();
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf.worker.min.mjs";
 
 const roles = ["Frontend", "Backend", "Full Stack", "UI/UX", "Data Analyst"];
 
